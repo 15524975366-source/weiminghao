@@ -1,0 +1,248 @@
+0 verbose cli C:\Users\ahs\AppData\Local\hermes\node\node.exe C:\Users\ahs\AppData\Local\hermes\node\node_modules\npm\bin\npm-cli.js
+1 info using npm@10.9.8
+2 info using node@v22.22.3
+3 silly config load:file:C:\Users\ahs\AppData\Local\hermes\node\node_modules\npm\npmrc
+4 silly config load:file:C:\Users\ahs\Desktop\Codex\wei-portfolio\.npmrc
+5 silly config load:file:C:\Users\ahs\.npmrc
+6 silly config load:file:C:\Users\ahs\AppData\Local\hermes\node\etc\npmrc
+7 verbose title npm install ogl
+8 verbose argv "install" "ogl" "--cache" ".npm-cache"
+9 verbose logfile logs-max:10 dir:C:\Users\ahs\Desktop\Codex\wei-portfolio\.npm-cache\_logs\2026-07-02T12_42_21_306Z-
+10 verbose logfile C:\Users\ahs\Desktop\Codex\wei-portfolio\.npm-cache\_logs\2026-07-02T12_42_21_306Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:4345298944 maxSize:1086324736 maxEntrySize:543162368
+13 silly idealTree buildDeps
+14 silly fetch manifest ogl@*
+15 silly packumentCache full:https://registry.npmjs.org/ogl cache-miss
+16 verbose shrinkwrap failed to load node_modules/.package-lock.json out of date, updated: node_modules
+17 http fetch GET 200 https://registry.npmjs.org/ogl 513ms (cache miss)
+18 silly packumentCache full:https://registry.npmjs.org/ogl set size:undefined disposed:false
+19 silly placeDep ROOT ogl@1.0.11 OK for: wei-minghao-portfolio@1.0.0 want: *
+20 silly reify moves {}
+21 silly audit bulk request {
+21 silly audit   '@emnapi/core': [ '1.11.1' ],
+21 silly audit   '@emnapi/runtime': [ '1.11.1' ],
+21 silly audit   '@emnapi/wasi-threads': [ '1.2.2' ],
+21 silly audit   '@napi-rs/wasm-runtime': [ '1.1.6' ],
+21 silly audit   '@oxc-project/types': [ '0.138.0' ],
+21 silly audit   '@rolldown/binding-android-arm64': [ '1.1.4' ],
+21 silly audit   '@rolldown/binding-darwin-arm64': [ '1.1.4' ],
+21 silly audit   '@rolldown/binding-darwin-x64': [ '1.1.4' ],
+21 silly audit   '@rolldown/binding-freebsd-x64': [ '1.1.4' ],
+21 silly audit   '@rolldown/binding-linux-arm-gnueabihf': [ '1.1.4' ],
+21 silly audit   '@rolldown/binding-linux-arm64-gnu': [ '1.1.4' ],
+21 silly audit   '@rolldown/binding-linux-arm64-musl': [ '1.1.4' ],
+21 silly audit   '@rolldown/binding-linux-ppc64-gnu': [ '1.1.4' ],
+21 silly audit   '@rolldown/binding-linux-s390x-gnu': [ '1.1.4' ],
+21 silly audit   '@rolldown/binding-linux-x64-gnu': [ '1.1.4' ],
+21 silly audit   '@rolldown/binding-linux-x64-musl': [ '1.1.4' ],
+21 silly audit   '@rolldown/binding-openharmony-arm64': [ '1.1.4' ],
+21 silly audit   '@rolldown/binding-wasm32-wasi': [ '1.1.4' ],
+21 silly audit   '@rolldown/binding-win32-arm64-msvc': [ '1.1.4' ],
+21 silly audit   '@rolldown/binding-win32-x64-msvc': [ '1.1.4' ],
+21 silly audit   '@rolldown/pluginutils': [ '1.0.1' ],
+21 silly audit   '@tybys/wasm-util': [ '0.10.3' ],
+21 silly audit   '@vitejs/plugin-react': [ '6.0.3' ],
+21 silly audit   'detect-libc': [ '2.1.2' ],
+21 silly audit   fdir: [ '6.5.0' ],
+21 silly audit   fsevents: [ '2.3.3' ],
+21 silly audit   lightningcss: [ '1.32.0' ],
+21 silly audit   'lightningcss-android-arm64': [ '1.32.0' ],
+21 silly audit   'lightningcss-darwin-arm64': [ '1.32.0' ],
+21 silly audit   'lightningcss-darwin-x64': [ '1.32.0' ],
+21 silly audit   'lightningcss-freebsd-x64': [ '1.32.0' ],
+21 silly audit   'lightningcss-linux-arm-gnueabihf': [ '1.32.0' ],
+21 silly audit   'lightningcss-linux-arm64-gnu': [ '1.32.0' ],
+21 silly audit   'lightningcss-linux-arm64-musl': [ '1.32.0' ],
+21 silly audit   'lightningcss-linux-x64-gnu': [ '1.32.0' ],
+21 silly audit   'lightningcss-linux-x64-musl': [ '1.32.0' ],
+21 silly audit   'lightningcss-win32-arm64-msvc': [ '1.32.0' ],
+21 silly audit   'lightningcss-win32-x64-msvc': [ '1.32.0' ],
+21 silly audit   'lucide-react': [ '1.23.0' ],
+21 silly audit   nanoid: [ '3.3.15' ],
+21 silly audit   picocolors: [ '1.1.1' ],
+21 silly audit   picomatch: [ '4.0.4' ],
+21 silly audit   postcss: [ '8.5.16' ],
+21 silly audit   react: [ '19.2.7' ],
+21 silly audit   'react-dom': [ '19.2.7' ],
+21 silly audit   rolldown: [ '1.1.4' ],
+21 silly audit   scheduler: [ '0.27.0' ],
+21 silly audit   'source-map-js': [ '1.2.1' ],
+21 silly audit   tinyglobby: [ '0.2.17' ],
+21 silly audit   tslib: [ '2.8.1' ],
+21 silly audit   vite: [ '8.1.2' ],
+21 silly audit   ogl: [ '1.0.11' ]
+21 silly audit }
+22 verbose reify failed optional dependency C:\Users\ahs\Desktop\Codex\wei-portfolio\node_modules\lightningcss-win32-arm64-msvc
+23 silly reify mark deleted [
+23 silly reify   'C:\\Users\\ahs\\Desktop\\Codex\\wei-portfolio\\node_modules\\lightningcss-win32-arm64-msvc'
+23 silly reify ]
+24 verbose reify failed optional dependency C:\Users\ahs\Desktop\Codex\wei-portfolio\node_modules\lightningcss-linux-x64-musl
+25 silly reify mark deleted [
+25 silly reify   'C:\\Users\\ahs\\Desktop\\Codex\\wei-portfolio\\node_modules\\lightningcss-linux-x64-musl'
+25 silly reify ]
+26 verbose reify failed optional dependency C:\Users\ahs\Desktop\Codex\wei-portfolio\node_modules\lightningcss-linux-x64-gnu
+27 silly reify mark deleted [
+27 silly reify   'C:\\Users\\ahs\\Desktop\\Codex\\wei-portfolio\\node_modules\\lightningcss-linux-x64-gnu'
+27 silly reify ]
+28 verbose reify failed optional dependency C:\Users\ahs\Desktop\Codex\wei-portfolio\node_modules\lightningcss-linux-arm64-musl
+29 silly reify mark deleted [
+29 silly reify   'C:\\Users\\ahs\\Desktop\\Codex\\wei-portfolio\\node_modules\\lightningcss-linux-arm64-musl'
+29 silly reify ]
+30 verbose reify failed optional dependency C:\Users\ahs\Desktop\Codex\wei-portfolio\node_modules\lightningcss-linux-arm64-gnu
+31 silly reify mark deleted [
+31 silly reify   'C:\\Users\\ahs\\Desktop\\Codex\\wei-portfolio\\node_modules\\lightningcss-linux-arm64-gnu'
+31 silly reify ]
+32 verbose reify failed optional dependency C:\Users\ahs\Desktop\Codex\wei-portfolio\node_modules\lightningcss-linux-arm-gnueabihf
+33 silly reify mark deleted [
+33 silly reify   'C:\\Users\\ahs\\Desktop\\Codex\\wei-portfolio\\node_modules\\lightningcss-linux-arm-gnueabihf'
+33 silly reify ]
+34 verbose reify failed optional dependency C:\Users\ahs\Desktop\Codex\wei-portfolio\node_modules\lightningcss-freebsd-x64
+35 silly reify mark deleted [
+35 silly reify   'C:\\Users\\ahs\\Desktop\\Codex\\wei-portfolio\\node_modules\\lightningcss-freebsd-x64'
+35 silly reify ]
+36 verbose reify failed optional dependency C:\Users\ahs\Desktop\Codex\wei-portfolio\node_modules\lightningcss-darwin-x64
+37 silly reify mark deleted [
+37 silly reify   'C:\\Users\\ahs\\Desktop\\Codex\\wei-portfolio\\node_modules\\lightningcss-darwin-x64'
+37 silly reify ]
+38 verbose reify failed optional dependency C:\Users\ahs\Desktop\Codex\wei-portfolio\node_modules\lightningcss-darwin-arm64
+39 silly reify mark deleted [
+39 silly reify   'C:\\Users\\ahs\\Desktop\\Codex\\wei-portfolio\\node_modules\\lightningcss-darwin-arm64'
+39 silly reify ]
+40 verbose reify failed optional dependency C:\Users\ahs\Desktop\Codex\wei-portfolio\node_modules\lightningcss-android-arm64
+41 silly reify mark deleted [
+41 silly reify   'C:\\Users\\ahs\\Desktop\\Codex\\wei-portfolio\\node_modules\\lightningcss-android-arm64'
+41 silly reify ]
+42 verbose reify failed optional dependency C:\Users\ahs\Desktop\Codex\wei-portfolio\node_modules\fsevents
+43 silly reify mark deleted [
+43 silly reify   'C:\\Users\\ahs\\Desktop\\Codex\\wei-portfolio\\node_modules\\fsevents'
+43 silly reify ]
+44 verbose reify failed optional dependency C:\Users\ahs\Desktop\Codex\wei-portfolio\node_modules\@rolldown\binding-win32-arm64-msvc
+45 silly reify mark deleted [
+45 silly reify   'C:\\Users\\ahs\\Desktop\\Codex\\wei-portfolio\\node_modules\\@rolldown\\binding-win32-arm64-msvc'
+45 silly reify ]
+46 verbose reify failed optional dependency C:\Users\ahs\Desktop\Codex\wei-portfolio\node_modules\@rolldown\binding-wasm32-wasi
+47 silly reify mark deleted [
+47 silly reify   'C:\\Users\\ahs\\Desktop\\Codex\\wei-portfolio\\node_modules\\@rolldown\\binding-wasm32-wasi'
+47 silly reify ]
+48 verbose reify failed optional dependency C:\Users\ahs\Desktop\Codex\wei-portfolio\node_modules\@emnapi\core
+49 silly reify mark deleted [
+49 silly reify   'C:\\Users\\ahs\\Desktop\\Codex\\wei-portfolio\\node_modules\\@emnapi\\core'
+49 silly reify ]
+50 verbose reify failed optional dependency C:\Users\ahs\Desktop\Codex\wei-portfolio\node_modules\@emnapi\runtime
+51 silly reify mark deleted [
+51 silly reify   'C:\\Users\\ahs\\Desktop\\Codex\\wei-portfolio\\node_modules\\@emnapi\\runtime'
+51 silly reify ]
+52 verbose reify failed optional dependency C:\Users\ahs\Desktop\Codex\wei-portfolio\node_modules\@napi-rs\wasm-runtime
+53 silly reify mark deleted [
+53 silly reify   'C:\\Users\\ahs\\Desktop\\Codex\\wei-portfolio\\node_modules\\@napi-rs\\wasm-runtime'
+53 silly reify ]
+54 verbose reify failed optional dependency C:\Users\ahs\Desktop\Codex\wei-portfolio\node_modules\@emnapi\wasi-threads
+55 silly reify mark deleted [
+55 silly reify   'C:\\Users\\ahs\\Desktop\\Codex\\wei-portfolio\\node_modules\\@emnapi\\wasi-threads'
+55 silly reify ]
+56 verbose reify failed optional dependency C:\Users\ahs\Desktop\Codex\wei-portfolio\node_modules\tslib
+57 silly reify mark deleted [
+57 silly reify   'C:\\Users\\ahs\\Desktop\\Codex\\wei-portfolio\\node_modules\\tslib'
+57 silly reify ]
+58 verbose reify failed optional dependency C:\Users\ahs\Desktop\Codex\wei-portfolio\node_modules\@tybys\wasm-util
+59 silly reify mark deleted [
+59 silly reify   'C:\\Users\\ahs\\Desktop\\Codex\\wei-portfolio\\node_modules\\@tybys\\wasm-util'
+59 silly reify ]
+60 verbose reify failed optional dependency C:\Users\ahs\Desktop\Codex\wei-portfolio\node_modules\@rolldown\binding-openharmony-arm64
+61 silly reify mark deleted [
+61 silly reify   'C:\\Users\\ahs\\Desktop\\Codex\\wei-portfolio\\node_modules\\@rolldown\\binding-openharmony-arm64'
+61 silly reify ]
+62 verbose reify failed optional dependency C:\Users\ahs\Desktop\Codex\wei-portfolio\node_modules\@rolldown\binding-linux-x64-musl
+63 silly reify mark deleted [
+63 silly reify   'C:\\Users\\ahs\\Desktop\\Codex\\wei-portfolio\\node_modules\\@rolldown\\binding-linux-x64-musl'
+63 silly reify ]
+64 verbose reify failed optional dependency C:\Users\ahs\Desktop\Codex\wei-portfolio\node_modules\@rolldown\binding-linux-x64-gnu
+65 silly reify mark deleted [
+65 silly reify   'C:\\Users\\ahs\\Desktop\\Codex\\wei-portfolio\\node_modules\\@rolldown\\binding-linux-x64-gnu'
+65 silly reify ]
+66 verbose reify failed optional dependency C:\Users\ahs\Desktop\Codex\wei-portfolio\node_modules\@rolldown\binding-linux-s390x-gnu
+67 silly reify mark deleted [
+67 silly reify   'C:\\Users\\ahs\\Desktop\\Codex\\wei-portfolio\\node_modules\\@rolldown\\binding-linux-s390x-gnu'
+67 silly reify ]
+68 verbose reify failed optional dependency C:\Users\ahs\Desktop\Codex\wei-portfolio\node_modules\@rolldown\binding-linux-ppc64-gnu
+69 silly reify mark deleted [
+69 silly reify   'C:\\Users\\ahs\\Desktop\\Codex\\wei-portfolio\\node_modules\\@rolldown\\binding-linux-ppc64-gnu'
+69 silly reify ]
+70 verbose reify failed optional dependency C:\Users\ahs\Desktop\Codex\wei-portfolio\node_modules\@rolldown\binding-linux-arm64-musl
+71 silly reify mark deleted [
+71 silly reify   'C:\\Users\\ahs\\Desktop\\Codex\\wei-portfolio\\node_modules\\@rolldown\\binding-linux-arm64-musl'
+71 silly reify ]
+72 verbose reify failed optional dependency C:\Users\ahs\Desktop\Codex\wei-portfolio\node_modules\@rolldown\binding-linux-arm64-gnu
+73 silly reify mark deleted [
+73 silly reify   'C:\\Users\\ahs\\Desktop\\Codex\\wei-portfolio\\node_modules\\@rolldown\\binding-linux-arm64-gnu'
+73 silly reify ]
+74 verbose reify failed optional dependency C:\Users\ahs\Desktop\Codex\wei-portfolio\node_modules\@rolldown\binding-linux-arm-gnueabihf
+75 silly reify mark deleted [
+75 silly reify   'C:\\Users\\ahs\\Desktop\\Codex\\wei-portfolio\\node_modules\\@rolldown\\binding-linux-arm-gnueabihf'
+75 silly reify ]
+76 verbose reify failed optional dependency C:\Users\ahs\Desktop\Codex\wei-portfolio\node_modules\@rolldown\binding-freebsd-x64
+77 silly reify mark deleted [
+77 silly reify   'C:\\Users\\ahs\\Desktop\\Codex\\wei-portfolio\\node_modules\\@rolldown\\binding-freebsd-x64'
+77 silly reify ]
+78 verbose reify failed optional dependency C:\Users\ahs\Desktop\Codex\wei-portfolio\node_modules\@rolldown\binding-darwin-x64
+79 silly reify mark deleted [
+79 silly reify   'C:\\Users\\ahs\\Desktop\\Codex\\wei-portfolio\\node_modules\\@rolldown\\binding-darwin-x64'
+79 silly reify ]
+80 verbose reify failed optional dependency C:\Users\ahs\Desktop\Codex\wei-portfolio\node_modules\@rolldown\binding-darwin-arm64
+81 silly reify mark deleted [
+81 silly reify   'C:\\Users\\ahs\\Desktop\\Codex\\wei-portfolio\\node_modules\\@rolldown\\binding-darwin-arm64'
+81 silly reify ]
+82 verbose reify failed optional dependency C:\Users\ahs\Desktop\Codex\wei-portfolio\node_modules\@rolldown\binding-android-arm64
+83 silly reify mark deleted [
+83 silly reify   'C:\\Users\\ahs\\Desktop\\Codex\\wei-portfolio\\node_modules\\@rolldown\\binding-android-arm64'
+83 silly reify ]
+84 http cache @napi-rs/wasm-runtime@https://registry.npmjs.org/@napi-rs/wasm-runtime/-/wasm-runtime-1.1.6.tgz 2ms (cache hit)
+85 http cache @tybys/wasm-util@https://registry.npmjs.org/@tybys/wasm-util/-/wasm-util-0.10.3.tgz 0ms (cache hit)
+86 http cache @emnapi/wasi-threads@https://registry.npmjs.org/@emnapi/wasi-threads/-/wasi-threads-1.2.2.tgz 0ms (cache hit)
+87 http cache ogl@https://registry.npmjs.org/ogl/-/ogl-1.0.11.tgz 1ms (cache hit)
+88 http cache @emnapi/runtime@https://registry.npmjs.org/@emnapi/runtime/-/runtime-1.11.1.tgz 0ms (cache hit)
+89 http cache tslib@https://registry.npmjs.org/tslib/-/tslib-2.8.1.tgz 0ms (cache hit)
+90 silly tarball no local data for ogl@https://registry.npmjs.org/ogl/-/ogl-1.0.11.tgz. Extracting by manifest.
+91 http cache @emnapi/core@https://registry.npmjs.org/@emnapi/core/-/core-1.11.1.tgz 0ms (cache hit)
+92 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 257ms
+93 silly audit report {}
+94 http fetch GET 200 https://registry.npmjs.org/ogl/-/ogl-1.0.11.tgz 779ms (cache miss)
+95 silly ADD node_modules/ogl
+96 silly ADD
+97 silly ADD
+98 silly ADD
+99 silly ADD
+100 silly ADD
+101 silly ADD
+102 silly ADD
+103 silly ADD
+104 silly ADD
+105 silly ADD
+106 silly ADD
+107 silly ADD
+108 silly ADD
+109 silly ADD
+110 silly ADD
+111 silly ADD
+112 silly ADD
+113 silly ADD
+114 silly ADD
+115 silly ADD
+116 silly ADD
+117 silly ADD
+118 silly ADD
+119 silly ADD
+120 silly ADD
+121 silly ADD
+122 silly ADD
+123 silly ADD
+124 silly ADD
+125 silly ADD
+126 silly ADD
+127 verbose cwd C:\Users\ahs\Desktop\Codex\wei-portfolio
+128 verbose os Windows_NT 10.0.26200
+129 verbose node v22.22.3
+130 verbose npm  v10.9.8
+131 verbose exit 0
+132 info ok
