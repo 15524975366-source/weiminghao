@@ -37,53 +37,53 @@
   .header nav{top:64px;max-height:calc(100dvh - 64px);font-size:17px}
   .brand-desktop{display:none}
   .brand-mobile{display:inline;font-size:16px!important;letter-spacing:.02em!important}
-  .hero{height:clamp(360px,calc(100vw + 10px),480px);min-height:360px;max-height:480px}
+  .hero{height:clamp(460px,calc(100vw + 110px),580px);min-height:460px;max-height:580px}
   .hero-ocean{background-size:auto calc(100% + 20px);background-position:calc(66% - 20px) top}
   .hero-shade{background:linear-gradient(90deg,rgba(4,7,8,.83),rgba(4,7,8,.26) 75%),linear-gradient(0deg,rgba(3,8,9,.95),rgba(3,8,9,.45) 41%,transparent 78%)}
   .hero-content{align-items:flex-start;padding-top:clamp(115px,18svh,150px);padding-bottom:0}
   .hero-copy h1{font-size:clamp(45px,11.6vw,68px);line-height:1.04;letter-spacing:-.065em;margin-bottom:20px}
   .hero-copy .lifted-title{transform:none}
-  .hero-copy p{font-size:14px;line-height:1.6;margin-bottom:25px}
-  .primary{min-height:52px;min-width:150px;padding:14px 20px;gap:18px;font-size:14px}
+  .hero-copy p{font-size:16px;line-height:1.6;margin-bottom:25px}
+  .primary{min-height:52px;min-width:150px;padding:14px 20px;gap:18px;font-size:16px}
   .primary svg{width:18px}
-  .section-tag{font-size:13px;letter-spacing:.18em;gap:12px}
+  .section-tag{font-size:16px;letter-spacing:.18em;gap:12px}
   .section-tag span{font-size:16px}
   .section-tag:after{width:68px}
   .about.section{padding-top:56px}
   .about-grid{grid-template-columns:minmax(0,1fr);margin-top:28px;gap:38px}
   .portrait{width:100%;max-width:100%;height:calc((100vw - 36px)*1.18);max-height:520px;overflow:hidden}
-  .portrait-label{bottom:14px;left:14px}
+  .portrait-label{bottom:14px;left:14px;font-size:16px}
   .bio{min-width:0;max-width:100%}
   .bio h2{font-size:clamp(34px,9.5vw,49px);line-height:1.17;letter-spacing:-.045em;margin:0 0 26px;overflow-wrap:anywhere}
-  .bio p{font-size:15px;line-height:1.8;color:#e5e2dc;margin:18px 0;overflow-wrap:anywhere}
-  .bio .lead{font-size:15px;line-height:1.8}
+  .bio p{font-size:16px;line-height:1.8;color:#e5e2dc;margin:18px 0;overflow-wrap:anywhere}
+  .bio .lead{font-size:16px;line-height:1.8}
   .stats{margin-top:34px}
   .stats>div{padding:20px 8px 18px}
   .stats strong{font-size:clamp(27px,8vw,38px);letter-spacing:-.06em;white-space:nowrap}
-  .stats strong span{font-size:11px;margin-left:3px}
-  .stats p{font-size:11px;line-height:1.45;margin-top:6px}
+  .stats strong span{font-size:16px;margin-left:3px}
+  .stats p{font-size:16px;line-height:1.45;margin-top:6px}
   .section-heading,.skills-head{margin:34px 0 34px}
   .section-heading h2,.skills-head h2{font-size:clamp(36px,9.5vw,50px);line-height:1.16;letter-spacing:-.05em}
-  .section-heading p,.skills-head p{font-size:14px;line-height:1.8;margin-top:20px;max-width:none}
+  .section-heading p,.skills-head p{font-size:16px;line-height:1.8;margin-top:20px;max-width:none}
   .job{grid-template-columns:28px minmax(0,1fr);gap:8px 12px;padding:30px 0}
-  .job-index{font-size:12px;align-self:center}
-  .job time{grid-column:2;font-size:14px;align-self:center}
+  .job-index{font-size:16px;align-self:center}
+  .job time{grid-column:2;font-size:16px;align-self:center}
   .job-main{grid-column:1/-1;margin-top:10px;min-width:0}
   .job-title h3{font-size:23px;line-height:1.3}
-  .job-title span{font-size:15px;line-height:1.8;margin-top:7px}
-  .job-main>p{font-size:15px;line-height:1.8;margin:16px 0}
+  .job-title span{font-size:16px;line-height:1.8;margin-top:7px}
+  .job-main>p{font-size:16px;line-height:1.8;margin:16px 0}
   .job ul{margin:18px 0;gap:10px}
-  .job li{font-size:15px;line-height:1.8}
-  .result{margin-top:20px;padding:16px 17px;font-size:15px;line-height:1.8}
+  .job li{font-size:16px;line-height:1.8}
+  .result{margin-top:20px;padding:16px 17px;font-size:16px;line-height:1.8}
   .skill-grid{grid-template-columns:1fr}
   .skill{min-height:0;padding:26px}
   .skill h3{font-size:23px;margin:36px 0 13px}
-  .skill p{font-size:14px;min-height:0;line-height:1.8;margin:0}
+  .skill p{font-size:16px;min-height:0;line-height:1.8;margin:0}
   .skill svg{width:27px;height:27px}
   .skill-line{margin-top:26px}
   .contact-wrap{padding:72px 0 28px}
   .contact-copy{margin:34px 0 38px}
-  .contact-copy>p{font-size:15px;line-height:1.6;transform:none}
+  .contact-copy>p{font-size:16px;line-height:1.6;transform:none}
   .contact h2{font-size:clamp(38px,11vw,50px);line-height:1.15;letter-spacing:-.055em;white-space:nowrap;margin:18px 0 0}
   .contact h2 br{display:none}
   .contact h2 em{display:inline;margin-left:.14em;transform:none}
@@ -102,7 +102,7 @@
 }
 
 @media(max-width:360px){
-  .brand-mobile{font-size:15px!important}
+  .brand-mobile{font-size:16px!important}
   .hero-copy h1{font-size:34px}
   .bio h2{font-size:34px}
   .contact h2{font-size:34px}
