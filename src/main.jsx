@@ -26,9 +26,9 @@ const skills = [
 ]
 
 function Header({ open, setOpen }) {
-  return <header className="header"><a className="brand" href="#home"><span>Alibaba International Digital Commerce Group</span></a>
-    <button className="menu" onClick={() => setOpen(!open)} aria-label="菜单">{open ? <X/> : <Menu/>}</button>
-    <nav className={open ? 'open' : ''}>{[['首页','home'],['关于我','about'],['工作经历','experience'],['能力优势','skills']].map(([a,b])=><a key={b} href={`#${b}`} onClick={()=>setOpen(false)}>{a}</a>)}<a className="nav-cta" href="#contact">联系我 <ArrowUpRight size={17}/></a></nav>
+  return <header className="header"><a className="brand" href="#home" onClick={()=>setOpen(false)}><span className="brand-desktop">Alibaba International Digital Commerce Group</span><span className="brand-mobile">Alibaba.com</span></a>
+    <button className="menu" type="button" onClick={() => setOpen(!open)} aria-label={open ? '关闭菜单' : '打开菜单'} aria-expanded={open} aria-controls="site-navigation">{open ? <X/> : <Menu/>}</button>
+    <nav id="site-navigation" className={open ? 'open' : ''}>{[['首页','home'],['关于我','about'],['工作经历','experience'],['能力优势','skills']].map(([a,b])=><a key={b} href={`#${b}`} onClick={()=>setOpen(false)}>{a}</a>)}<a className="nav-cta" href="#contact" onClick={()=>setOpen(false)}>联系我 <ArrowUpRight size={17}/></a></nav>
   </header>
 }
 
@@ -58,9 +58,8 @@ function App() {
 
     <section className="skills section" id="skills"><div className="wrap"><div className="section-tag reveal"><span>03</span> CAPABILITIES</div><div className="skills-head reveal"><h2>把复杂问题<br/>变成<span>确定行动</span></h2><p>能力不是标签，而是在每一次真实业务现场里，持续被验证的方法。</p></div><div className="skill-grid">{skills.map(({icon:Icon,...s})=><article className="skill reveal" key={s.no}><div><span>{s.no}</span><Icon/></div><h3>{s.title}</h3><p>{s.text}</p><div className="skill-line"/></article>)}</div></div></section>
 
-    <section className="contact" id="contact"><div className="contact-bg"/><div className="wrap contact-wrap"><div className="section-tag reveal"><span>04</span> CONTACT</div><div className="contact-copy reveal"><p>下一段增长，从一次真诚的交流开始。</p><h2>期待与你<br/><em>合作</em></h2></div><div className="contact-socials reveal"><BorderGlow className="social-glow" edgeSensitivity={18} glowColor="18 100 38" backgroundColor="#070b0d" borderRadius={22} glowRadius={36} glowIntensity={1.8} coneSpread={30} animated={true} colors={["#7a2400", "#641b22", "#07384a"]} fillOpacity={0.32}><img src="/social-accounts-combined.png" alt="抖音、小红书和视频号账号二维码"/></BorderGlow></div><div className="contact-actions reveal"><a href="tel:18594204546"><span>电话</span><b>185 9420 4546</b><ArrowUpRight/></a><a href="mailto:10615961@qq.com"><span>邮箱</span><b>10615961@qq.com</b><ArrowUpRight/></a></div><footer><span>© 2026 WEI MINGHAO</span><span>ALIBABA.COM ACCOUNT MANAGER · SHENZHEN</span></footer></div></section>
+    <section className="contact" id="contact"><div className="contact-bg"/><div className="wrap contact-wrap"><div className="section-tag reveal"><span>04</span> CONTACT</div><div className="contact-copy reveal"><p>下一段增长，从一次真诚的交流开始。</p><h2>期待与你<br/><em>合作</em></h2></div><div className="contact-socials reveal"><BorderGlow className="social-glow" edgeSensitivity={18} glowColor="18 100 38" backgroundColor="#070b0d" borderRadius={22} glowRadius={36} glowIntensity={1.8} coneSpread={30} animated={true} colors={["#7a2400", "#641b22", "#07384a"]} fillOpacity={0.32}><img src="/social-accounts-combined.png" alt="抖音、小红书和视频号账号二维码"/></BorderGlow></div><div className="contact-socials-mobile reveal" role="region" aria-label="抖音、小红书和视频号二维码">{['抖音二维码','小红书二维码','视频号二维码'].map((label, index)=><div className={`social-mobile-card social-mobile-card-${index + 1}`} key={label}><img src="/social-accounts-combined.png" alt={label}/></div>)}</div><div className="contact-actions reveal"><a href="tel:18594204546"><span>电话</span><b>185 9420 4546</b><ArrowUpRight/></a><a href="mailto:10615961@qq.com"><span>邮箱</span><b>10615961@qq.com</b><ArrowUpRight/></a></div><footer><span>© 2026 WEI MINGHAO</span><span>ALIBABA.COM ACCOUNT MANAGER · SHENZHEN</span></footer></div></section>
   </main>
 }
 
 createRoot(document.getElementById('root')).render(<App />)
-
