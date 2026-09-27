@@ -7,6 +7,39 @@
 
 .brand-mobile,.contact-socials-mobile{display:none}
 
+.contact-socials-trigger{display:block;width:100%;padding:0;border:0;background:none;color:inherit;cursor:zoom-in}
+.contact-socials-trigger:focus-visible,.qr-lightbox-close:focus-visible{outline:3px solid var(--orange);outline-offset:5px}
+.qr-lightbox{position:fixed;inset:0;z-index:200;display:grid;place-items:center;padding:64px;background:rgba(3,8,9,.94);cursor:zoom-out}
+.qr-lightbox img{display:block;max-width:min(1200px,100%);max-height:calc(100dvh - 128px);object-fit:contain;border-radius:18px;background:#fff;cursor:default}
+.qr-lightbox-close{position:absolute;top:24px;right:32px;display:grid;place-items:center;width:44px;height:44px;border:1px solid rgba(255,255,255,.4);border-radius:50%;background:#111b1e;color:#fff;cursor:pointer}
+
+@media(min-width:901px){
+  .primary{font-size:18px}
+  .experience .section-heading p,.skills-head p,.job-main>p,.job li,.job-title span,.skill p{color:#c6c9c4}
+}
+
+/* Keep the brand orange while giving CTA labels readable contrast. */
+.nav-cta,.primary{color:var(--ink)}
+
+@media(min-width:901px) and (max-width:1199px){
+  .header{gap:24px}
+  .brand{min-width:0}
+  .brand span{font-size:16px}
+  .header nav{flex-shrink:0;gap:16px;font-size:13px}
+  .nav-cta{gap:8px;padding:11px 12px}
+  .about-grid{grid-template-columns:minmax(0,42%) minmax(0,1fr);gap:36px}
+  .portrait{top:0;height:500px}
+  .bio{transform:none;padding-top:0}
+  .bio h2{font-size:clamp(42px,4.6vw,55px);margin-bottom:30px}
+  .stats{grid-template-columns:repeat(3,minmax(0,1fr));margin:48px 0 0}
+  .stats>div{min-width:0;padding:24px}
+  .stats strong{font-size:clamp(36px,4vw,48px)}
+  .section-heading{grid-template-columns:minmax(0,1fr) minmax(0,38%)}
+  .section-heading p{transform:none}
+  .skill-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .contact-actions{max-width:100%}
+}
+
 @media(max-width:900px){
   .header nav{position:fixed;top:65px;left:0;right:0;width:100vw;max-height:calc(100dvh - 65px);overflow-y:auto;padding:16px 20px 24px;background:rgba(7,12,13,.97);backdrop-filter:blur(18px);gap:0;border-bottom:1px solid var(--line);box-shadow:0 20px 40px rgba(0,0,0,.35)}
   .header nav>a:not(.nav-cta){display:block;padding:15px 8px;border-bottom:1px solid var(--line)}
@@ -20,7 +53,7 @@
   .stats>div{padding:24px 18px;border-right:1px solid var(--line);border-bottom:0}
   .stats>div:last-child{border-right:0}
   .job time{transform:none;white-space:normal}
-  .contact{height:auto;min-height:0;overflow:visible}
+  .contact{height:auto;min-height:0;overflow:visible;overflow-x:clip}
   .contact-wrap{height:auto;padding:100px 0 40px}
   .contact-copy{margin:50px 0 55px}
   .contact-socials{position:static;width:100%;margin:0 0 44px}

@@ -34,8 +34,23 @@ function Header({ open, setOpen }) {
 
 function App() {
   const [open, setOpen] = useState(false)
+  const [qrOpen, setQrOpen] = useState(false)
   const bioRef = useRef(null)
+  const qrTriggerRef = useRef(null)
+  const qrCloseRef = useRef(null)
   useEffect(() => { const io = new IntersectionObserver(es => es.forEach(e => e.isIntersecting && e.target.classList.add('visible')), {threshold:.12}); document.querySelectorAll('.reveal').forEach(el=>io.observe(el)); return ()=>io.disconnect() }, [])
+  useEffect(() => {
+    if (!qrOpen) return
+    const previousOverflow = document.body.style.overflow
+    document.body.style.overflow = 'hidden'
+    const handleKeyDown = (event) => {
+      if (event.key === 'Escape') setQrOpen(false)
+      if (event.key === 'Tab') { event.preventDefault(); qrCloseRef.current?.focus() }
+    }
+    document.addEventListener('keydown', handleKeyDown)
+    qrCloseRef.current?.focus()
+    return () => { document.body.style.overflow = previousOverflow; document.removeEventListener('keydown', handleKeyDown); qrTriggerRef.current?.focus() }
+  }, [qrOpen])
   return <main>
     <section className="hero" id="home">
       <div className="hero-ocean"/>
@@ -58,7 +73,8 @@ function App() {
 
     <section className="skills section" id="skills"><div className="wrap"><div className="section-tag reveal"><span>03</span> CAPABILITIES</div><div className="skills-head reveal"><h2>把复杂问题<br/>变成<span>确定行动</span></h2><p>能力不是标签，而是在每一次真实业务现场里，持续被验证的方法。</p></div><div className="skill-grid">{skills.map(({icon:Icon,...s})=><article className="skill reveal" key={s.no}><div><span>{s.no}</span><Icon/></div><h3>{s.title}</h3><p>{s.text}</p><div className="skill-line"/></article>)}</div></div></section>
 
-    <section className="contact" id="contact"><div className="contact-bg"/><div className="wrap contact-wrap"><div className="section-tag reveal"><span>04</span> CONTACT</div><div className="contact-copy reveal"><p>下一段增长，从一次真诚的交流开始。</p><h2>期待与你<br/><em>合作</em></h2></div><div className="contact-socials reveal"><BorderGlow className="social-glow" edgeSensitivity={18} glowColor="18 100 38" backgroundColor="#070b0d" borderRadius={22} glowRadius={36} glowIntensity={1.8} coneSpread={30} animated={true} colors={["#7a2400", "#641b22", "#07384a"]} fillOpacity={0.32}><img src="/social-accounts-combined.png" alt="抖音、小红书和视频号账号二维码"/></BorderGlow></div><div className="contact-socials-mobile reveal" role="region" aria-label="抖音、小红书和视频号二维码">{['抖音二维码','小红书二维码','视频号二维码'].map((label, index)=><div className={`social-mobile-card social-mobile-card-${index + 1}`} key={label}><img src="/social-accounts-combined.png" alt={label}/></div>)}</div><div className="contact-actions reveal"><a href="tel:18594204546"><span>电话</span><b>185 9420 4546</b><ArrowUpRight/></a><a href="mailto:10615961@qq.com"><span>邮箱</span><b>10615961@qq.com</b><ArrowUpRight/></a></div><footer><span>© 2026 WEI MINGHAO</span><span>ALIBABA.COM ACCOUNT MANAGER · SHENZHEN</span></footer></div></section>
+    <section className="contact" id="contact"><div className="contact-bg"/><div className="wrap contact-wrap"><div className="section-tag reveal"><span>04</span> CONTACT</div><div className="contact-copy reveal"><p>下一段增长，从一次真诚的交流开始。</p><h2>期待与你<br/><em>合作</em></h2></div><div className="contact-socials reveal"><button className="contact-socials-trigger" type="button" ref={qrTriggerRef} onClick={()=>setQrOpen(true)} aria-label="放大查看抖音、小红书和视频号二维码"><BorderGlow className="social-glow" edgeSensitivity={18} glowColor="18 100 38" backgroundColor="#070b0d" borderRadius={22} glowRadius={36} glowIntensity={1.8} coneSpread={30} animated={true} colors={["#7a2400", "#641b22", "#07384a"]} fillOpacity={0.32}><img src="/social-accounts-combined.png" alt="抖音、小红书和视频号账号二维码"/></BorderGlow></button></div><div className="contact-socials-mobile reveal" role="region" aria-label="抖音、小红书和视频号二维码">{['抖音二维码','小红书二维码','视频号二维码'].map((label, index)=><div className={`social-mobile-card social-mobile-card-${index + 1}`} key={label}><img src="/social-accounts-combined.png" alt={label}/></div>)}</div><div className="contact-actions reveal"><a href="tel:18594204546"><span>电话</span><b>185 9420 4546</b><ArrowUpRight/></a><a href="mailto:10615961@qq.com"><span>邮箱</span><b>10615961@qq.com</b><ArrowUpRight/></a></div><footer><span>© 2026 WEI MINGHAO</span><span>ALIBABA.COM ACCOUNT MANAGER · SHENZHEN</span></footer></div></section>
+    {qrOpen && <div className="qr-lightbox" role="dialog" aria-modal="true" aria-label="抖音、小红书和视频号二维码大图" onClick={()=>setQrOpen(false)}><button className="qr-lightbox-close" type="button" ref={qrCloseRef} aria-label="关闭二维码大图" onClick={()=>setQrOpen(false)}><X/></button><img src="/social-accounts-combined.png" alt="抖音、小红书和视频号账号二维码大图" onClick={event=>event.stopPropagation()}/></div>}
   </main>
 }
 
