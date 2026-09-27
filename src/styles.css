@@ -30,6 +30,10 @@
   .experience .section-heading p,.skills-head p,.job-main>p,.job li,.job-title span,.skill p{color:#c6c9c4}
 }
 
+@media(max-width:600px){
+  .skill:hover p,.skill:active p{color:var(--paper)}
+}
+
 /* Keep the brand orange while giving CTA labels readable contrast. */
 .nav-cta,.primary{color:var(--ink)}
 
