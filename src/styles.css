@@ -7,11 +7,23 @@
 
 .brand-mobile,.contact-socials-mobile{display:none}
 
-.contact-socials-trigger{display:block;width:100%;padding:0;border:0;background:none;color:inherit;cursor:zoom-in}
+.contact-socials-trigger{position:relative;display:block;width:100%;padding:0;border:0;background:none;color:inherit;cursor:zoom-in}
+.qr-hover-zones{display:none}
 .contact-socials-trigger:focus-visible,.qr-lightbox-close:focus-visible{outline:3px solid var(--orange);outline-offset:5px}
 .qr-lightbox{position:fixed;inset:0;z-index:200;display:grid;place-items:center;padding:64px;background:rgba(3,8,9,.94);cursor:zoom-out}
 .qr-lightbox img{display:block;max-width:min(1200px,100%);max-height:calc(100dvh - 128px);object-fit:contain;border-radius:18px;background:#fff;cursor:default}
 .qr-lightbox-close{position:absolute;top:24px;right:32px;display:grid;place-items:center;width:44px;height:44px;border:1px solid rgba(255,255,255,.4);border-radius:50%;background:#111b1e;color:#fff;cursor:pointer}
+.skill:hover,.skill:active{background:#172d43}
+
+@media(min-width:901px) and (hover:hover){
+  .qr-hover-zones{position:absolute;inset:0;z-index:5;display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}
+  .qr-hover-zones>span{position:relative;min-width:0}
+  .qr-hover-zones>span::after{content:'';position:absolute;top:50%;width:min(360px,46vw);aspect-ratio:.767;transform:translateY(-50%);background-image:url('/social-accounts-combined.png');background-size:300% 100%;background-repeat:no-repeat;border:1px solid rgba(255,255,255,.8);border-radius:16px;box-shadow:0 24px 70px rgba(0,0,0,.5);opacity:0;visibility:hidden;pointer-events:none;transition:opacity .2s ease,visibility .2s ease}
+  .qr-hover-zones>span:hover::after{opacity:1;visibility:visible}
+  .qr-hover-zones>span:first-child::after{left:0;background-position:-12px 0}
+  .qr-hover-zones>span:nth-child(2)::after{left:50%;transform:translate(-50%,-50%);background-position:calc(50% - 16px) 0}
+  .qr-hover-zones>span:last-child::after{right:0;background-position:100% 0}
+}
 
 @media(min-width:901px){
   .primary{font-size:18px}
